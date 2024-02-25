@@ -1,0 +1,38 @@
+{
+  "currentUser": {
+    "username": "Princhi"
+  },
+  "comments": [
+    {
+      "id": 1,
+      "content": "What technology are you using? Asking to the developer community",
+      "createdAt": "20 February 2024",
+      "username": "Rahul",
+      "currentUser": false,
+      "replies": [{
+        "id": 2,
+        "content": "@Rahul, Senior developers in my company usually work with azure cloud, python, Power Bi, snowflake, all major structured and unstructured databases, Linux.        Ps not all have knowledge of all the technologies. It's a combination of usually 2-3 tech.",
+        "createdAt": "21 February 2024",
+        "username": "Pradeep_4",
+        "currentUser": false,   
+        "replies": []
+      },{
+        "id": 3,
+        "content": "@Rahul, [YOE: 3.1] My role is changing from project to project, but overall: BE: Node.js + Express [or] Python + Django [with] PostgreSQL [or] MongoDB. FE: React.js [or] SwiftUI. Infra: Vercel & AWS. VCS & CICD: Git & Github actions.",
+        "createdAt": "23 February 2024",
+        "username": "kkmessi10",
+        "currentUser": false,   
+        "replies": []
+      }
+    ]
+    },
+    {
+      "id": 4,
+      "content": "Interesting ...",
+      "createdAt": "24 February 2024",
+      "username": "Princhi",
+      "currentUser": true,
+      "replies": []
+    }
+  ]
+}

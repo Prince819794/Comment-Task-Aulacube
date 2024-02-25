@@ -1,0 +1,114 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.add-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 52%;
+  padding: 20px;
+  background: $white;
+  border-radius: 6px;
+  animation: come-in 1.5s ease-in-out;
+
+  .profile-pic {
+    width: 30px;
+    height: 30px;
+background: url(../../Assets/avatars/profile.png);
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  > .profile-pic {
+    display: none;
+  }
+
+  .comment-input {
+    position: relative;
+    height: 100px;
+    border: 2px solid $light-gray;
+    color: #fff;
+    background-color: $moderate-blue;
+    border-radius: 10px;
+    padding: 15px 25px;
+    resize: none;
+    scrollbar-width: none;
+
+    &::placeholder {
+      color: $dark-blue;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    &:focus {
+      outline: 1.5px solid $grayish-blue;
+    }
+  }
+
+  .send-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .add-btn {
+    color: #fff;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    background: $moderate-blue;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+      opacity: 0.65;
+    }
+  }
+
+  @include media-md() {
+    flex-direction: row;
+    padding: 25px;
+    gap: 25px;
+
+    > .profile-pic {
+      width: 50px;
+      height: 36px;
+      display: block;
+      margin: 0;
+    }
+
+    .comment-input {
+      width: 100%;
+    }
+
+    .send-btn-container {
+
+      .profile-pic {
+        display: none;
+      }
+    }
+  }
+}
+
+@keyframes come-in {
+  0%{
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  75%{
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
