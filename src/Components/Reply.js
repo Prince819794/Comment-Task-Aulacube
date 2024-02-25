@@ -68,14 +68,6 @@ const Reply = ({
               update
             </button>
           )}
-          <CommentBtn
-            commentData={commentData}
-            replying={replying}
-            setReplying={setReplying}
-            setDeleting={setDeleting}
-            setDeleteModalState={setDeleteModalState}
-            setEditing={setEditing}
-          />
         </div>
         <CommentFooter
           updateScore={updateScore}

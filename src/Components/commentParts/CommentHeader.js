@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 
 import { commentPostedTime } from "../../utils";
+import CommentBtn from "./CommentBtn";
+
 
 const CommentHeader = ({
   commentData,
@@ -29,6 +31,14 @@ const CommentHeader = ({
       <div className={`profile-pic ${commentData.username}`}></div>
       <div className="username">{commentData.username}</div>
       <div className="comment-posted-time">{`${time} ago`}</div>
+      <CommentBtn
+            commentData={commentData}
+            replying={replying}
+            setReplying={setReplying}
+            setDeleting={setDeleting}
+            setDeleteModalState={setDeleteModalState}
+            setEditing={setEditing}
+          />
     </div>
   );
 };

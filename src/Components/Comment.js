@@ -3,7 +3,6 @@ import "./Styles/Comment.scss";
 import AddComment from "./AddComment";
 import ReplyContainer from "./ReplyContainer";
 import DeleteModal from "./DeleteModal";
-import CommentBtn from "../Components/commentParts/CommentBtn";
 import { CommentHeader, CommentFooter } from "./commentParts";
 
 const Comment = ({ commentData, updateScore, updateReplies, editComment, commentDelete, setDeleteModalState }) => {
@@ -57,14 +56,6 @@ const Comment = ({ commentData, updateScore, updateReplies, editComment, comment
           {editing && (
             <button className="update-btn" onClick={updateComment}>update</button>
           )}
-          <CommentBtn
-            commentData={commentData}
-            replying={replying}
-            setReplying={setReplying}
-            setDeleting={setDeleting}
-            setDeleteModalState={setDeleteModalState}
-            setEditing={setEditing}
-          />
         </div>
         <CommentFooter
           commentData={commentData}

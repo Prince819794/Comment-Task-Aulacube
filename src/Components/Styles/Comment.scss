@@ -4,7 +4,7 @@
 .comment-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 90%;
 
   .comment {
     display: flex;
@@ -56,9 +56,6 @@
 
         .comment--btn {
           display: none;
-          button{
-            background: #1b000052;
-          }
         }
       }
 
@@ -71,8 +68,7 @@
 
         .replyingTo {
           color: $moderate-blue;
-          font-weight: $fw-bold;  
-            background: #e4efff;
+          font-weight: $fw-bold;
           display: inline-block;
           margin-right: 10px;
         }
@@ -169,7 +165,6 @@
 
     .delete-btn {
       color: $soft-red;
-      background: blue;
     }
   }
 
@@ -198,7 +193,7 @@
   }
 
   @include media-md() {
-    // width: 735px;
+    width: 735px;
 
     .comment {
       flex-direction: row;
@@ -256,8 +251,7 @@
   background: url(https://static.vecteezy.com/system/resources/previews/019/055/008/non_2x/cute-anime-girl-in-the-form-of-a-cat-vector.jpg);
 }
 .Princhi {
-  background: url(../../Assets/avatars/profile.png);
-}
+  background: url(https://github.com/Prince819794/Comment-Task-Aulacube/blob/main/src/Assets/avatars/profile.png?raw=true)}
 .kkmessi10
 {
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWYw33MB0YuNGAL45YuFVJZzDVe28UVuN-EY3aZmenng&s);
